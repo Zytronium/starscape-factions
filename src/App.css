@@ -21,7 +21,7 @@
     top: 0.5rem;
     z-index: 999;
     box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-    margin: auto auto -2.5rem;
+    margin: auto auto 1rem;
 }
 
 .preview-banner strong {
@@ -31,14 +31,12 @@
 }
 /* hero */
 .hero {
-    min-height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    padding: 4rem 0 2rem;
+    padding: 1rem 0 1rem;
     color: var(--text-color);
-    margin-top: -4rem;
 }
 
 .hero-inner {
@@ -168,7 +166,33 @@
     color: rgba(255,255,255,0.55);
     font-size: 0.9rem;
 }
+/* --------------------------------------------------------------
+   Pricing‑specific helpers
+--------------------------------------------------------------- */
+.pricing-page .card {
+    text-align: left;
+    max-width: 720px;
+    margin: 1.5rem auto;
+}
 
+/* Lists inside cards – a little spacing & bullet style */
+.pricing-page .price-list {
+    list-style: disc inside;
+    margin: 0.8rem 0;
+    padding-left: 0.2rem;
+}
+.pricing-page .price-list li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+/* Code snippets (the URLs) */
+.pricing-page code {
+    background: rgba(255,255,255,0.08);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    color: var(--link);
+}
 /* responsive */
 @media (max-width: 920px) {
     .features-grid { grid-template-columns: repeat(2, 1fr); }

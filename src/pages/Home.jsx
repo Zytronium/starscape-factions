@@ -19,7 +19,8 @@ export default function Home() {
             <a className="btn ghost" href="/factions">Browse Collection</a>
           </div>
 
-          <div className="promo">First customers get <strong>50% off</strong> and priority build</div>
+          <p className="promo">First customers get <strong>50% off</strong> and priority build</p>
+          <a className="btn ghost" href="/pricing">View Pricing</a>
         </div>
       </section>
 
@@ -68,8 +69,8 @@ export default function Home() {
       <section className="browse">
         <h2 className="section-title">Browse our Collection</h2>
         <p className="muted">
-          See sites built for previous clients. If none are public yet,
-          be the first to get a showcase site and 50% off.
+          See sites built for previous clients. If none are public yet, be the
+          first to get a showcase site and <strong>50% off</strong>!
         </p>
         <div className="cta-row">
           <a className="btn primary" href="/factions">View Directory</a>
