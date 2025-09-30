@@ -1,0 +1,182 @@
+/* layout root */
+#root {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.preview-banner {
+    width: 80%;
+    background: linear-gradient(90deg, rgba(255, 95, 109, 0.75), rgba(255, 195, 113, 0.8));
+    color: #212121;
+    text-align: center;
+    font-weight: 600;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    border-radius: 0.8rem;
+    backdrop-filter: blur(5px);
+    position: sticky;
+    top: 0.5rem;
+    z-index: 999;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    margin: auto auto -2.5rem;
+}
+
+.preview-banner strong {
+    font-weight: bolder;
+    font-size: 1rem;
+    color: black;
+}
+/* hero */
+.hero {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 4rem 0 2rem;
+    color: var(--text-color);
+}
+
+.hero-inner {
+    z-index: 1;
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.brand {
+    height: 56px;
+    display: inline-block;
+    margin-bottom: 0.75rem;
+    filter: drop-shadow(0 6px 18px rgba(0,0,0,0.6));
+}
+
+.hero-title {
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    margin: 0.25rem 0 0.5rem;
+    letter-spacing: -0.02em;
+}
+
+.lead {
+    color: rgba(255,255,255,0.82);
+    margin: 0.5rem 0 1rem;
+    font-size: 1.05rem;
+}
+
+/* CTA */
+.hero-ctas {
+    display: inline-flex;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.65rem 1.1rem;
+    border-radius: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 160ms ease, box-shadow 160ms ease, opacity 160ms;
+    background: transparent;
+    color: var(--text-color);
+}
+
+.btn:hover {
+    color: inherit !important;
+}
+
+.btn.primary {
+    background: linear-gradient(
+            155deg,
+            var(--primary) -40%,
+            var(--secondary) 75%
+    );
+
+    color: #eeeeee;
+    box-shadow: 0 6px 24px rgba(83,91,242,0.12);
+}
+
+.btn.ghost {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    color: rgba(255,255,255,0.9);
+}
+
+.btn:hover { transform: translateY(-4px); }
+
+/* promo badge */
+.promo {
+    margin-top: 0.9rem;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.7);
+}
+
+/* features */
+.features { padding: 2.5rem 0 1.5rem; }
+.section-title { margin: 0 0 1rem; font-size: 2.5rem; }
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    align-items: stretch;
+}
+
+.feature .icon {
+    font-size: 1.65rem;
+    margin-bottom: 0.5rem;
+}
+
+/* card base override */
+.card {
+    background-color: rgba(14,16,28,0.55);
+    border-radius: 12px;
+    padding: 1.3rem;
+    margin: 0.25rem;
+    backdrop-filter: blur(6px);
+    text-align: left;
+    box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+}
+
+/* browse section */
+.browse { padding: 2rem 0 1.5rem; }
+.cta-row { margin-top: 1rem; display:flex; gap:0.75rem; justify-content:center; }
+
+/* testimonials */
+.testimonials { padding: 1.5rem 0; }
+.test-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+.testimonial { text-align: left; }
+
+/* partners */
+.partners { padding: 1.5rem 0 3rem; }
+.partners-row { display:flex; gap: 1rem; justify-content:center; align-items:center; }
+.partner-logo { height: 48px; filter: drop-shadow(0 8px 16px rgba(0,0,0,0.55)); }
+.partner-link { display: flex; justify-content:center; align-items:center; align-self: center; font-size: 2rem; }
+.partner-link:hover { opacity: 0.8; text-decoration: underline; }
+.partner-link:visited {  }
+
+/* footer */
+.site-footer {
+    padding: 2rem 0 3rem;
+    color: rgba(255,255,255,0.55);
+    font-size: 0.9rem;
+}
+
+/* responsive */
+@media (max-width: 920px) {
+    .features-grid { grid-template-columns: repeat(2, 1fr); }
+    .hero { padding: 3rem 0 1rem; }
+}
+
+@media (max-width: 560px) {
+    .features-grid { grid-template-columns: 1fr; }
+    .brand { height: 48px; }
+    .hero-title { font-size: 1.9rem; }
+    .hero-inner { padding: 0 1rem; }
+}

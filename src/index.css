@@ -1,0 +1,95 @@
+:root {
+    --primary: #9b1969;
+    --secondary: #190d71;
+    --link: #53aaf2;
+    --link-hover: #4997d7;
+    --link-visited: #535BF2FF;
+    --link-visited-hover: #4d55e4;
+    --bg-gradient:
+        radial-gradient(
+            circle at bottom,
+            rgba(16, 22, 73, 0.8) -20%,
+            rgba(10, 10, 20, 0.6) 40%,
+            transparent 80%
+        ),
+        linear-gradient(135deg, #07091b 0%, #1a1a2e 50%, #07091b 100%);
+    --text-color: #ffffff;
+    --card-bg: rgba(20, 20, 30, 0.85);
+    --transition: all 0.3s ease;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Inter", system-ui, sans-serif;
+    background: var(--bg-gradient);
+    background-attachment: fixed;
+    background-size: cover;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+a {
+    color: var(--link);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--link-hover);
+}
+
+a:visited {
+    color: var(--link-visited);
+}
+
+a:visited:hover {
+    color: var(--link-visited-hover);
+}
+
+button {
+    border-radius: 8px;
+    border: none;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: var(--primary);
+    color: #fff;
+    cursor: pointer;
+    transition: var(--transition);
+}
+button:hover {
+    background-color: var(--secondary);
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 1rem;
+    backdrop-filter: blur(5px);
+    transition: var(--transition);
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+h1, h2, h3 {
+    margin: 0.5em 0;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeIn 0.8s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
