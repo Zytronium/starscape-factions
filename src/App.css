@@ -38,6 +38,7 @@
     position: relative;
     padding: 4rem 0 2rem;
     color: var(--text-color);
+    margin-top: -4rem;
 }
 
 .hero-inner {

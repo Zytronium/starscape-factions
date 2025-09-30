@@ -30,37 +30,37 @@ export default function Home() {
           <article className="card feature">
             <div className="icon">💰</div>
             <h3>Affordable Pricing</h3>
-            <p>Packages from 2k → 20k credits. Transparent quotes per request.</p>
+            <p>Cheap, reasonable pricing ranging from 2k credits to 20k credits, depending on your request</p>
           </article>
 
           <article className="card feature">
             <div className="icon">🎨</div>
             <h3>Custom Themes</h3>
-            <p>Tuned to your faction colors, insignia, and lore.</p>
+            <p>Customize your theme to your faction's color scheme</p>
           </article>
 
           <article className="card feature">
             <div className="icon">🧩</div>
             <h3>Modern Design</h3>
-            <p>Responsive layouts, fluid animations, and polished UI.</p>
+            <p>Using the latest modern styles and techniques to create websites with a modern feel; or try another style if you don't like it</p>
           </article>
 
           <article className="card feature">
             <div className="icon">🔎</div>
             <h3>SEO Friendly</h3>
-            <p>Prerendered pages and clean structured content for search engines.</p>
+            <p>Prerendered, responsive layouts with SEO-optimized content keeps your website is on top of the search results</p>
           </article>
 
           <article className="card feature">
             <div className="icon">📣</div>
             <h3>Free Advertising</h3>
-            <p>Option to list on The Faction Nexus and our public directory.</p>
+            <p>Option to upload your faction data to The Faction Nexus to appear on their factions directory, as well as on our list of faction websites</p>
           </article>
 
           <article className="card feature">
             <div className="icon">⚙️</div>
             <h3>Full Control</h3>
-            <p>You decide what goes live. Analytics coming soon.</p>
+            <p>You decide what goes on your website; plus potential access to website analytics in the future</p>
           </article>
         </div>
       </section>
