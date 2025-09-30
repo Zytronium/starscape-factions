@@ -128,10 +128,9 @@ export default function Pricing() {
           You may pay in credits, USD, or Bitcoin.
         </p>
         <p>
-          Credits can only be traded
-          in-game on Starscape (main game only).
-          USD must be paid via Venmo (more options coming soon).
-          Bitcoin payments are not yet available.
+          Credits can only be traded in-game on Starscape (main game only).<br />
+          USD must be paid via Venmo (more options coming soon).<br />
+          Bitcoin payments are not yet available.<br />
         </p>
       </article>
 
